@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "greetings-client-side-solution",
+    "id": "e3971209-5e82-437c-8e0c-44f6c00983d9",
+    "version": "1.1.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "greetings description"
+      },
+      "longDescription": {
+        "default": "greetings description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "greetings Feature",
+        "description": "The feature that activates elements of the greetings solution.",
+        "id": "d1eb2bd0-3f9c-4d4c-a21c-1951b5f60416",
+        "version": "1.1.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/greetings.sppkg"
+  }
+}

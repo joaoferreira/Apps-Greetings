@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "4e29bf15-c996-4878-9010-6e2db90bce3c",
+  "alias": "GreetingsWebPart",
+  "componentType": "WebPart",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Advanced
+    "group": { "default": "Advanced", "nl-NL": "Anders" },
+    "title": { "default": "Greetings", "nl-NL": "Begroeting"},
+    "description": { 
+      "default": "Enhance your SharePoint pages with a touch of warmth! Our custom greetings web part allows you to create a personalized experience for your users. Whether it’s a friendly “Good morning”, a cheerful “Hello”, or a warm “Welcome back”, this web part sets the tone and makes every interaction special.",
+      "nl-NL": "Verfraai je SharePoint-pagina's met een vleugje warmte! Onze aangepaste begroetingen-webonderdeel stelt je in staat om een gepersonaliseerde ervaring voor je gebruikers te creëren. Of het nu een vriendelijke “Goedemorgen”, een vrolijke “Hallo” of een warme “Welkom terug” is, dit webonderdeel zet de toon en maakt elke interactie speciaal."
+    },
+    "officeFabricIconFontName": "WavingHand",
+    "properties": {
+      "greetingsCustomMessage": ""
+    }
+  }]
+}
